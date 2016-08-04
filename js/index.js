@@ -856,7 +856,7 @@ var shape = {
 var timer = undefined;
 
 function queue() {
-    var text = 'BBAE';
+    var text = 'default text';
 
     var i = 0;
     var max = text.length;
