@@ -1,23 +1,27 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello, King Lam</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<div class="home">
+  <body>
 
-  <h1 class="page-heading">Posts</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- 
+ Commands:
+    #clear
+    #explode
+    #queue
+    #countdown
+    #galaxy
+    #ring
+-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+	
+	<script src="js/index.min.js"></script>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  </body>
+</html>
