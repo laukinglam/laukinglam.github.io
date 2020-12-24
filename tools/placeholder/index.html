@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placeholder Image</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Placeholder</h2>
+      <div id="hidden-container"></div>
+      <img id="placeholder-img" src="https://via.placeholder.com/150" />
+    </div>
+    <script>
+      (function () {
+        var hiddenContainer = $("#hidden-container");
+        var placeholderImg = $("#placeholder-img");
+
+        var containerWidth = hiddenContainer.width();
+
+        console.log("screen width: " + containerWidth);
+
+        placeholderImg.attr(
+          "src",
+          "https://via.placeholder.com/" + containerWidth
+        );
+      })();
+    </script>
+  </body>
+</html>
